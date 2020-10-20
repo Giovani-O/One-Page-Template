@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page Template</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/nav-bar.css">
+    <link rel="stylesheet" href="./css/sections.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul id="nav-menu" class="from-the-top">
+            <li><a href="#home-section" id="1" onclick="navActivate(this.id)" class="active-border">Home</a> </li>
+            <li><a href="#about-section" id="2" onclick="navActivate(this.id); aboutAnimations()">About</a> </li>
+            <li><a href="#photos-section" id="3" onclick="navActivate(this.id); photosAnimations()">Photos</a> </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home-section">
+            <div class="landing">
+                <h1 class="from-the-top">One Page <br>Template</h1>
+                <p class="from-the-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Praesent commodo sem id massa mattis, sit amet aliquam felis blandit.</p>
+                <a href="#about-section" id="go-down" class="from-the-top" onclick="aboutAnimations()">Go!</a>
+            </div>
+        </section>
+        <section id="about-section">
+            <div id="text-container">
+                <h1>
+                    About us
+                </h1>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo sem id massa mattis, sit amet aliquam felis blandit. In vestibulum non erat et malesuada. Phasellus pretium et tellus vel pulvinar. Donec eu libero eros. Phasellus eget orci at purus volutpat tempor euismod a risus. Nullam tempor felis et diam elementum euismod at nec arcu. <br>
+
+                        Suspendisse potenti. Aenean convallis fringilla dui, ut lacinia libero fermentum at. Integer pretium ex dictum gravida fermentum. Donec varius dolor sit amet congue tempor. Curabitur tristique sit amet urna et aliquet. Maecenas volutpat nunc lorem, at molestie magna tempor quis. Curabitur non diam a leo gravida porta egestas sed urna. Mauris accumsan orci neque. 
+                    </p>
+                    <img src="./images/about1.jpg" alt="About us">
+                </div>
+
+                <div>
+                    <img src="./images/about2.jpg" alt="About us">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo sem id massa mattis, sit amet aliquam felis blandit. In vestibulum non erat et malesuada. Phasellus pretium et tellus vel pulvinar. Donec eu libero eros. Phasellus eget orci at purus volutpat tempor euismod a risus. Nullam tempor felis et diam elementum euismod at nec arcu. <br>
+
+                        Suspendisse potenti. Aenean convallis fringilla dui, ut lacinia libero fermentum at. Integer pretium ex dictum gravida fermentum. Donec varius dolor sit amet congue tempor. Curabitur tristique sit amet urna et aliquet. Maecenas volutpat nunc lorem, at molestie magna tempor quis. Curabitur non diam a leo gravida porta egestas sed urna. Mauris accumsan orci neque. 
+                    </p>
+                </div>
+            </div>
+            
+        </section>
+        <section id="photos-section">
+            <h1>Take a look</h1>
+            <div id="gallery">
+                <div id="main-picture" onclick="location.href='#gallery'"></div>
+                <div class="thumbnails">
+                    <img src="./images/pic1.jpg" alt="First picture" id="a" class="active-picture" onclick="changePicture(this.id, this.src)">
+                    <img src="./images/pic2.jpg" alt="Second picture" id="b" onclick="changePicture(this.id, this.src)">
+                    <img src="./images/pic3.jpg" alt="Third picture" id="c" onclick="changePicture(this.id, this.src)">
+                    <img src="./images/pic4.jpg" alt="Fourth picture" id="d" onclick="changePicture(this.id, this.src)">
+                    <img src="./images/pic5.jpg" alt="Fifth picture" id="e" onclick="changePicture(this.id, this.src)">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Developed by Giovani O.</p>
+        <a href="https://www.linkedin.com/in/giovani-o/">LinkedIn</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

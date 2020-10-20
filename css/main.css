@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100vw;
+}
+
+body {
+    background: #fafdf6;
+    background-size: cover;
+    background-position: center;
+    color: #fafdf6;
+    font-family: 'Raleway', sans-serif;
+    /*font-weights: 400, 500, 700*/
+    overflow-x: hidden;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+@media (max-width: 425px){
+    html {
+        overflow-x: hidden;
+    }
+}

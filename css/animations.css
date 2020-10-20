@@ -1,0 +1,52 @@
+/* *** Animations *** */
+
+@keyframes from-the-top{
+    from {
+        transform: translateY(-2.5rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes from-the-right{
+    from {
+        transform: translateX(-2.5rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes from-the-left{
+    from {
+        transform: translateX(2.5rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.from-the-top {
+    animation-name: from-the-top;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+}
+
+.from-the-right {
+    animation-name: from-the-right;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+}
+
+.from-the-left {
+    animation-name: from-the-left;
+    animation-duration: 1.5s;
+    animation-fill-mode: backwards;
+}
